@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace HI5
 {
-    public class CustomHI5_MuscleInertiaInstance : MonoBehaviour
+    public class NoitomHi5InertiaToFingerMuscle : MonoBehaviour
     {
         private const int ConstIndexHi5Hand = (int) Bones.Hand;
         private const int ConstIndexNumOfHi5Bones = (int) Bones.NumOfHI5Bones;
@@ -71,7 +71,7 @@ namespace HI5
         {
             if (animator == null || !animator.isHuman)
             {
-                Debug.LogError($"{nameof(CustomHI5_MuscleInertiaInstance)}: 正しいAnimatorを指定してください。");
+                Debug.LogError($"{nameof(NoitomHi5InertiaToFingerMuscle)}: 正しいAnimatorを指定してください。");
                 enabled = false;
                 return;
             }
