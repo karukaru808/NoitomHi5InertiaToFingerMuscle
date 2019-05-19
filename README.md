@@ -11,10 +11,11 @@ Noitom Hi5を用いてHumanoidモデルの指を動かすことが可能にな�
 もちろん[VRM](https://github.com/vrm-c/UniVRM)でも正常に動作することを確認しています。
 
 ## 使い方
-1. [Releases](https://github.com/Bizcast/NoitomHi5InertiaToFingerMuscle)からUnityPackageをダウンロードしてプロジェクトにインポートする。
+1. [Releases](https://github.com/Bizcast/NoitomHi5InertiaToFingerMuscle)からUnityPackageをダウンロードしてインポートする。
+1. [Noitom Hi5 Unity SDK](https://hi5vrglove.com/downloads/unity)と（必要であれば）[SteamVR Plugin](https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647)をダウンロードしてインポートする。
 1. 適当なGameObjectに `NoitomHi5InertiaToFingerMuscle` コンポーネントをアタッチする。
 1. 指を動かしたい対象のHumanoid Animatorを `Animator` に登録する。
-1. 左右どちらかの指を動かしたい場合は `HandType` から設定する。`Both` だと左右両方の指が動きます。
+1. 左右どちらか片方の指を動かしたい場合は `HandType` から設定する。`Both` だと左右両方の指が動きます。
 1. **（非推奨）** 手首を動かしたい場合は `HandRotationWeight` に適当な値を設定する。
 1. Noitom Hi5を接続してエディタを再生する。
 1. エンジョイ！
